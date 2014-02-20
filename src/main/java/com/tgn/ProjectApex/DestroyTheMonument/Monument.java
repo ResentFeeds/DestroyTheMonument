@@ -29,20 +29,17 @@ import com.tgn.ProjectApex.DestroyTheMonument.bar.BarUtil;
 import com.tgn.ProjectApex.DestroyTheMonument.chat.ChatListener;
 import com.tgn.ProjectApex.DestroyTheMonument.chat.ChatUtil;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.AnnihilationCommand;
-import com.tgn.ProjectApex.DestroyTheMonument.commands.ClassCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.DistanceCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.MapCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.StatsCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.TeamCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.TeamShortcutCommand;
 import com.tgn.ProjectApex.DestroyTheMonument.commands.VoteCommand;
-import com.tgn.ProjectApex.DestroyTheMonument.listeners.BossListener;
 import com.tgn.ProjectApex.DestroyTheMonument.listeners.CraftingListener;
 import com.tgn.ProjectApex.DestroyTheMonument.listeners.PlayerListener;
 import com.tgn.ProjectApex.DestroyTheMonument.listeners.ResourceListener;
 import com.tgn.ProjectApex.DestroyTheMonument.listeners.WandListener;
 import com.tgn.ProjectApex.DestroyTheMonument.listeners.WorldListener;
-import com.tgn.ProjectApex.DestroyTheMonument.manager.BossManager;
 import com.tgn.ProjectApex.DestroyTheMonument.manager.ConfigManager;
 import com.tgn.ProjectApex.DestroyTheMonument.manager.DatabaseManager;
 import com.tgn.ProjectApex.DestroyTheMonument.manager.MapManager;
@@ -91,7 +88,6 @@ public final class Monument extends JavaPlugin implements Listener {
     private SignManager sign;
     private ScoreboardManager sb;
     private DatabaseManager db;
-    private BossManager boss;
     private Translation translation;
 
     public static HashMap<String, String> messages = new HashMap<String, String>();
@@ -143,7 +139,6 @@ public final class Monument extends JavaPlugin implements Listener {
                 config.getInt("phase-period"));
         voting = new VotingManager(this);
         sb = new ScoreboardManager();
-        boss = new BossManager(this);
 
         PluginManager pm = getServer().getPluginManager();
 
@@ -163,10 +158,8 @@ public final class Monument extends JavaPlugin implements Listener {
         pm.registerEvents(new WorldListener(), this);
         pm.registerEvents(new WandListener(this), this);
         pm.registerEvents(new CraftingListener(), this);
-        pm.registerEvents(new BossListener(this), this);
 
         getCommand("nexusgrinder").setExecutor(new AnnihilationCommand(this));
-        getCommand("class").setExecutor(new ClassCommand());
         getCommand("stats").setExecutor(new StatsCommand(stats));
         getCommand("team").setExecutor(new TeamCommand(this));
         getCommand("vote").setExecutor(new VoteCommand(voting));
@@ -299,16 +292,7 @@ public final class Monument extends JavaPlugin implements Listener {
             double yred = 5;
             double zred = 0;
             Location locred = new Location(Bukkit.getWorld("lobby"), xred, yred, zred);
-            //ORANGE
-            double xorange = 0;
-            double yorange = 5;
-            double zorange = -11;
-            Location locorange = new Location(Bukkit.getWorld("lobby"), xorange, yorange, zorange);
-            //GREEN
-            double xgreen = 0;
-            double ygreen = 5;
-            double zgreen = 10;
-            Location locgreen = new Location(Bukkit.getWorld("lobby"), xgreen, ygreen, zgreen);
+
 
             Sheep sheep = (Sheep) event.getEntity();
 
@@ -351,46 +335,12 @@ public final class Monument extends JavaPlugin implements Listener {
                 }
 
 
-            } else if (sheep.getColor() == DyeColor.ORANGE) {
-                sheep.teleport(locorange);
-                for (GameTeam t : GameTeam.teams()) {
-                    int size = 0;
 
-                    for (Player p : Bukkit.getOnlinePlayers()) {
-                        PlayerMeta metas = PlayerMeta.getMeta(p);
-                        if (metas.getTeam() == GameTeam.YELLOW)
-                            size++;
-                    }
-
-                    if (size != 1) {
-                        sheep.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.YELLOW + " YELLOW TEAM " + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players" );
-                    } else {
-                        sheep.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.YELLOW + " YELLOW TEAM " + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players");
-                    }
-                }
-            } else if (sheep.getColor() == DyeColor.GREEN) {
-                sheep.teleport(locgreen);
-                for (GameTeam t : GameTeam.teams()) {
-                    int size = 0;
-
-                    for (Player p : Bukkit.getOnlinePlayers()) {
-                        PlayerMeta metas = PlayerMeta.getMeta(p);
-                        if (metas.getTeam() == GameTeam.GREEN)
-                            size++;
-                    }
-
-                    if (size != 1) {
-                        sheep.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.GREEN + " GREEN TEAM " + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players" );
-                    } else {
-                        sheep.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.GREEN + " GREEN TEAM " + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players");
-                    }
                 }
             }
 
 
         }
-    }
-
     @EventHandler
     public void sheepRightClick(PlayerInteractEntityEvent event) {
         if (event.getRightClicked() instanceof Sheep && event.getPlayer() instanceof Player) {
@@ -436,42 +386,7 @@ public final class Monument extends JavaPlugin implements Listener {
 
                 }
 
-            } else if (s.getColor() == DyeColor.GREEN) {
-                player.performCommand("team green");
-                for (GameTeam t : GameTeam.teams()) {
-                    int size = 0;
 
-                    for (Player p : Bukkit.getOnlinePlayers()) {
-                        PlayerMeta metas = PlayerMeta.getMeta(p);
-                        if (meta.getTeam() == GameTeam.GREEN)
-                            size++;
-                    }
-
-                    if (size != 1) {
-                        s.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.GREEN + " GREEN TEAM" + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players" );
-                    } else {
-                        s.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.GREEN + " GREEN TEA " + ChatColor.DARK_GREEN + "<" + ChatColor.GREEN + "Join " + size + " Players");
-                    }
-
-                }
-            } else if (s.getColor() == DyeColor.ORANGE) {
-                player.performCommand("team yellow");
-                for (GameTeam t : GameTeam.teams()) {
-                    int size = 0;
-
-                    for (Player p : Bukkit.getOnlinePlayers()) {
-                        PlayerMeta metas = PlayerMeta.getMeta(p);
-                        if (meta.getTeam() == GameTeam.YELLOW)
-                            size++;
-                    }
-
-                    if (size != 1) {
-                        s.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.YELLOW + " YELLOW TEAM " + ChatColor.DARK_GREEN + "< " + ChatColor.GREEN + "Join " + size + " Players" );
-                    } else {
-                        s.setCustomName(ChatColor.GREEN + "Join" + ChatColor.DARK_GREEN + ">" + ChatColor.YELLOW + " YELLOW TEAM " + ChatColor.DARK_GREEN + "< " + ChatColor.GREEN + "Join " + size + " Players");
-                    }
-
-                }
             }
         }
     }
@@ -574,9 +489,6 @@ public final class Monument extends JavaPlugin implements Listener {
     public void advancePhase() {
         ChatUtil.phaseMessage(timer.getPhase());
 
-        if (timer.getPhase() == 2)
-            boss.spawnBosses();
-
         if (timer.getPhase() == 3)
             resources.spawnDiamonds();
 
@@ -585,8 +497,6 @@ public final class Monument extends JavaPlugin implements Listener {
 
         getSignHandler().updateSigns(GameTeam.RED);
         getSignHandler().updateSigns(GameTeam.BLUE);
-        getSignHandler().updateSigns(GameTeam.GREEN);
-        getSignHandler().updateSigns(GameTeam.YELLOW);
     }
 
     public void onSecond() {
@@ -773,9 +683,6 @@ public final class Monument extends JavaPlugin implements Listener {
         }
     }
 
-    public BossManager getBossManager() {
-        return boss;
-    }
 
     public PhaseManager getPhaseManager() {
         return timer;
@@ -852,7 +759,5 @@ public final class Monument extends JavaPlugin implements Listener {
 
         getSignHandler().updateSigns(GameTeam.RED);
         getSignHandler().updateSigns(GameTeam.BLUE);
-        getSignHandler().updateSigns(GameTeam.GREEN);
-        getSignHandler().updateSigns(GameTeam.YELLOW);
     }
 }

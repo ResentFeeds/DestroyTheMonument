@@ -106,7 +106,6 @@ public class ResourceListener implements Listener {
 
     private void breakResource(Player player, Block block) {
         Material type = block.getType();
-        Kit kit = PlayerMeta.getMeta(player).getKit();
         Resource resource = resources.get(type);
 
         if (type.equals(Material.GRAVEL)) {
@@ -117,9 +116,6 @@ public class ResourceListener implements Listener {
         } else {
             Material dropType = resource.drop;
             int qty = getDropQuantity(type);
-            if ((type.name().contains("ORE") && kit == Kit.MINER)
-                    || (type.name().contains("LOG") && kit == Kit.LUMBERJACK))
-                qty *= rand.nextFloat() < 0.9 ? 2 : 1;
             player.getInventory().addItem(new ItemStack(dropType, qty));
         }
 

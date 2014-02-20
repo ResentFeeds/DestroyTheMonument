@@ -67,8 +67,6 @@ public class PhaseManager {
 
         plugin.getSignHandler().updateSigns(GameTeam.RED);
         plugin.getSignHandler().updateSigns(GameTeam.BLUE);
-        plugin.getSignHandler().updateSigns(GameTeam.GREEN);
-        plugin.getSignHandler().updateSigns(GameTeam.YELLOW);
     }
 
     public void stop() {
@@ -131,8 +129,6 @@ public class PhaseManager {
 
             plugin.getSignHandler().updateSigns(GameTeam.RED);
             plugin.getSignHandler().updateSigns(GameTeam.BLUE);
-            plugin.getSignHandler().updateSigns(GameTeam.GREEN);
-            plugin.getSignHandler().updateSigns(GameTeam.YELLOW);
         }
 
         for (Player p : Bukkit.getOnlinePlayers())

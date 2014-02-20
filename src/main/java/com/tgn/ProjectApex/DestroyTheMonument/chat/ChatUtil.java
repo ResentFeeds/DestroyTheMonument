@@ -57,12 +57,7 @@ public class ChatUtil {
             }
         }
         String msg = message;
-        String permGroup = VaultHooks.getGroup(sender.getName());
-        if (!permGroup.equals(""))
-            group += " " + permGroup + RESET;
-        String toSend = group + " " + username + RESET + ": " + msg;
-        for (Player player : Bukkit.getOnlinePlayers())
-            player.sendMessage(toSend);
+
     }
 
     public static void teamMessage(GameTeam team, Player sender,
@@ -77,12 +72,7 @@ public class ChatUtil {
                 group = DARK_GRAY + "[" + DARK_RED + "DEAD" + DARK_GRAY + "] " + group;
             }
         }
-        String permGroup = VaultHooks.getGroup(sender.getName());
-        if (!permGroup.equals(""))
-            group += " " + permGroup + RESET;
-        String toSend = group + " " + team.color() + sender.getName() + RESET + ": " + message;
-        for (Player player : team.getPlayers())
-            player.sendMessage(toSend);
+
     }
 
     public static void broadcast(String message) {
@@ -135,22 +125,6 @@ public class ChatUtil {
         broadcast(GRAY + "Team " + winner.coloredName() + GRAY
                 + " Wins NexusGrinder! Restarting game...");
         broadcast(GRAY + "==========================================");
-    }
-
-    public static void bossDeath(Boss b, Player killer, GameTeam team) {
-        broadcast(GRAY + "==========[ " + DARK_AQUA + "Boss Killed" + GRAY
-                + " ]==========");
-        broadcast(GRAY + b.getBossName() + GRAY + " was killed by "
-                + colorizeName(killer, team));
-        broadcast(GRAY + "================================");
-    }
-
-    public static void bossRespawn(Boss b) {
-        broadcast(GRAY + "================[ " + DARK_AQUA + "Boss" + GRAY
-                + " ]================");
-        broadcast(GRAY + b.getBossName() + GRAY
-                + " has respawned! Go slay the beast!");
-        broadcast(GRAY + "=======================================");
     }
 
     public static String formatDeathMessage(Player victim, Player killer,

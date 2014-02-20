@@ -8,6 +8,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/SBA/SEnch.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/SBA/SItem.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/SBA/SMeth.java" />
+      <change type="DELETED" beforePath="C:\Development\DestroyTheMonument\src\main\java\com\tgn\ProjectApex\DestroyTheMonument\api\BossSpawnEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DestroyTheMonument\src\main\java\com\tgn\ProjectApex\DestroyTheMonument\commands\ClassCommand.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DestroyTheMonument\src\main\java\com\tgn\ProjectApex\DestroyTheMonument\listeners\BossListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DestroyTheMonument\src\main\java\com\tgn\ProjectApex\DestroyTheMonument\manager\BossManager.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/chat/ChatUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/chat/ChatUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java" />
     </list>
     <ignored path="DestroyTheMonument.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,7 +99,34 @@
       <file leaf-file-name="Monument.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="53" selection-start="5474" selection-end="5474" vertical-scroll-proportion="-11.346154" vertical-offset="1677" max-vertical-offset="14263">
+            <state line="89" column="31" selection-start="4511" selection-end="4511" vertical-scroll-proportion="-6.8076925" vertical-offset="1336" max-vertical-offset="12682">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="40" selection-start="4108" selection-end="4108" vertical-scroll-proportion="0.0" vertical-offset="1726" max-vertical-offset="3519">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2075#2095#0" expanded="true" />
+                <element signature="e#2154#2164#0" expanded="true" />
+                <element signature="e#2222#2232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhaseManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="63" selection-start="4057" selection-end="4057" vertical-scroll-proportion="1.1798942" vertical-offset="1371" max-vertical-offset="2448">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -127,18 +162,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerMeta.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/PlayerMeta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="918">
-              <folding>
-                <element signature="e#1951#1952#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CraftingListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/CraftingListener.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerListener.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlayerListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/PlayerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="559" column="5" selection-start="22344" selection-end="22344" vertical-scroll-proportion="0.78519857" vertical-offset="9068" max-vertical-offset="9622">
+            <state line="559" column="5" selection-start="22344" selection-end="22344" vertical-scroll-proportion="0.0" vertical-offset="9068" max-vertical-offset="9622">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -171,6 +194,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ChatUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/chat/ChatUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0" vertical-offset="457" max-vertical-offset="2924">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Util.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -184,28 +216,6 @@
                 <element signature="e#4060#4061#0" expanded="true" />
                 <element signature="e#9831#10128#0" expanded="true" />
                 <element signature="e#10113#10114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kit.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/Kit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="62" selection-start="5517" selection-end="5517" vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2465">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMeth.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/SBA/SMeth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="5" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0" vertical-offset="1337" max-vertical-offset="2006">
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,13 +246,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ClassAbilityListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/EnderBrewingStandListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/EnderFurnaceListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/WandListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/BossManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/MapManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/RestartHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/SignManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/VotingManager.java" />
@@ -256,12 +264,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/Kit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/PlayerMeta.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/Nexus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/GameTeam.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/ScoreboardManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/CraftingListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/PlayerListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/chat/ChatUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/commands/ClassCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" />
       </list>
     </option>
   </component>
@@ -874,7 +886,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -919,13 +931,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="21" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/api/BossSpawnEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
@@ -1037,22 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="40" selection-start="2375" selection-end="2375" vertical-scroll-proportion="-16.072727" vertical-offset="136" max-vertical-offset="3655">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2075#2095#0" expanded="true" />
-            <element signature="e#2154#2164#0" expanded="true" />
-            <element signature="e#2222#2232#0" expanded="true" />
-            <element signature="e#5343#5652#0" expanded="true" />
-            <element signature="e#5372#5404#0" expanded="true" />
-            <element signature="e#5641#5642#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/WandListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="32" selection-start="2411" selection-end="2411" vertical-scroll-proportion="-14.218182" vertical-offset="170" max-vertical-offset="2516">
@@ -1065,19 +1054,6 @@
             <element signature="e#4985#4986#0" expanded="true" />
             <element signature="e#5478#5599#0" expanded="true" />
             <element signature="e#5588#5589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/BossManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="1684" selection-end="1684" vertical-scroll-proportion="-8.345454" vertical-offset="204" max-vertical-offset="1870">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1467#1481#0" expanded="true" />
-            <element signature="e#1541#1555#0" expanded="true" />
-            <element signature="e#1858#1890#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1167,16 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/BossListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="36" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0" vertical-offset="463" max-vertical-offset="2193">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/SignManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="35" selection-start="1662" selection-end="1662" vertical-scroll-proportion="-8.345454" vertical-offset="221" max-vertical-offset="1751">
@@ -1184,16 +1150,6 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#1591#1622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="2516">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1277,16 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="53" selection-start="5474" selection-end="5474" vertical-scroll-proportion="-11.346154" vertical-offset="1677" max-vertical-offset="14263">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/Nexus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="53" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
@@ -1317,7 +1263,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/PlayerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="559" column="5" selection-start="22344" selection-end="22344" vertical-scroll-proportion="0.78519857" vertical-offset="9068" max-vertical-offset="9622">
+        <state line="559" column="5" selection-start="22344" selection-end="22344" vertical-scroll-proportion="0.0" vertical-offset="9068" max-vertical-offset="9622">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1332,6 +1278,46 @@
             <element signature="e#21035#21036#0" expanded="true" />
             <element signature="e#21325#22011#0" expanded="true" />
             <element signature="e#21992#21993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/chat/ChatUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0" vertical-offset="457" max-vertical-offset="2924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="40" selection-start="4108" selection-end="4108" vertical-scroll-proportion="0.0" vertical-offset="1726" max-vertical-offset="3519">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2075#2095#0" expanded="true" />
+            <element signature="e#2154#2164#0" expanded="true" />
+            <element signature="e#2222#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="31" selection-start="4511" selection-end="4511" vertical-scroll-proportion="-6.8076925" vertical-offset="1336" max-vertical-offset="12682">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="63" selection-start="4057" selection-end="4057" vertical-scroll-proportion="1.1798942" vertical-offset="1371" max-vertical-offset="2448">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
