@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d59dfc-f4b3-4c34-900d-496e97550ac3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DestroyTheMonument.ipr" afterPath="$PROJECT_DIR$/DestroyTheMonument.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
     </list>
     <ignored path="DestroyTheMonument.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +84,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6054795" vertical-offset="1326" max-vertical-offset="1768">
+            <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -131,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+            <state line="1" column="53" selection-start="78" selection-end="78" vertical-scroll-proportion="0.04657534" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -152,7 +153,7 @@
       <file leaf-file-name="DestroyTheMonument.iws" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DestroyTheMonument.iws">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22746">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22763">
               <folding />
             </state>
           </provider>
@@ -251,9 +252,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/listeners/ResourceListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/kits.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
       </list>
     </option>
   </component>
@@ -1299,13 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/kits.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="9" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
@@ -1322,7 +1316,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6054795" vertical-offset="1326" max-vertical-offset="1768">
+        <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="53" selection-start="78" selection-end="78" vertical-scroll-proportion="0.04657534" vertical-offset="0" max-vertical-offset="663">
           <folding />
         </state>
       </provider>

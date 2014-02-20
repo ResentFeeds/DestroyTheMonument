@@ -1,5 +1,5 @@
 name: DestroyTheMonument
-main: com.tgn.ProjectApex.DestroyTheMonument.Annihilation
+main: com.tgn.ProjectApex.DestroyTheMonument.Monument
 authors: [morpigthekidMC, _BritishCow_]
 version: ${project.version}-b${BUILD_NUMBER}
 commands:
