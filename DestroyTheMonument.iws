@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d59dfc-f4b3-4c34-900d-496e97550ac3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/kits.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DestroyTheMonument.iws" afterPath="$PROJECT_DIR$/DestroyTheMonument.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="DestroyTheMonument.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,6 +83,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6054795" vertical-offset="1326" max-vertical-offset="1768">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Monument.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Monument.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,28 +140,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kits.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="kits.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/kits.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="9" selection-start="14" selection-end="14" vertical-scroll-proportion="0.04657534" vertical-offset="0" max-vertical-offset="476">
+            <state line="1" column="9" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTeam.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/object/GameTeam.java">
+      <file leaf-file-name="DestroyTheMonument.iws" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DestroyTheMonument.iws">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScoreboardManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/ScoreboardManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="31" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22746">
               <folding />
             </state>
           </provider>
@@ -214,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/Annihilation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/commands/DistanceCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/bar/BarUtil.java" />
@@ -256,6 +253,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/manager/PhaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/kits.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -914,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tgn/ProjectApex/DestroyTheMonument/api/GameStartEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="13" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
@@ -1317,7 +1308,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/kits.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="14" selection-end="14" vertical-scroll-proportion="0.04657534" vertical-offset="0" max-vertical-offset="476">
+        <state line="1" column="9" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DestroyTheMonument.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="35" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6054795" vertical-offset="1326" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
