@@ -1,0 +1,34 @@
+name: NexusGrinder
+main: com.tgn.ProjectApex.DestroyTheMonument.Annihilation
+authors: [morpigthekidMC, _BritishCow_]
+version: ${project.version}-b${BUILD_NUMBER}
+commands:
+  nexusgrinder:
+    description: Plugin commands for Annihilation
+    aliases: ng
+  team:
+    description: Team command for Annihilation
+    aliases: t
+  vote:
+    description: Places vote for a map
+    aliases: v
+  stats:
+    description: Lists your stats
+    aliases: s
+  class:
+    description: Selects your kit
+    aliases: c
+  blue:
+    description: Join the Blue team!
+  green:
+    description: Join the Green team!
+  yellow:
+    description: Join the Yellow team!
+  red:
+    description: Join the Red team!
+  distance:
+    description: Gets distance to enemy nexuses
+    aliases: [d, dis]
+  map:
+    description: Admin Map commands
+    aliases: m
