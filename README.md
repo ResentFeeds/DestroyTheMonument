@@ -1,0 +1,4 @@
+DestroyTheMonument
+==================
+
+DESTROY THE MONUMENT!
