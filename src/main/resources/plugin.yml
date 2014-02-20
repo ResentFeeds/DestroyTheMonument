@@ -1,4 +1,4 @@
-name: NexusGrinder
+name: DestroyTheMonument
 main: com.tgn.ProjectApex.DestroyTheMonument.Annihilation
 authors: [morpigthekidMC, _BritishCow_]
 version: ${project.version}-b${BUILD_NUMBER}

@@ -1,0 +1,22 @@
+kit:
+  default:
+    name: '&a[VIP] &0Ender Dragon'
+    icon: dragonegg,1,0,sharpness,1
+    lore: '&8Knock Them Off!!%nl%%nl%&9Ability: &bHealth Boost%nl%&9Weakness: &bWater'
+    ability:
+    - health_boost
+    - corroding
+    - speed_boost
+    - jump_boost
+    - tntaxe
+    - enderbow
+    arenas:
+    - -1vs1
+    items:
+    - team_helmet
+    - diamondchestplate,1,0,protection,1
+    - ironleggings,1,0,protection,1
+    - team_boots
+    - ironaxe,1,0,knockback,5,sharpness,5
+    - bow,1,0,infinity,1,flame,1
+    - arrow,1,0,sharpness,1
